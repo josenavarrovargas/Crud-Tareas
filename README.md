@@ -2,20 +2,22 @@
 
 Para iniciar la aplicación, se debe contar con Java versión 8 instalado en el equipo. 
 
-Debe actualizar las siguientes propiedades en /src/main/resources/application.properties: 
+Antes de continuar, debe ejecutar en su BD MySQL el script SQL /scripts/crud_tareas.sql
 
-* url 
-* username 
-* password
+Luego, debe actualizar las siguientes propiedades en /src/main/resources/application.properties: 
+
+* spring.datasource.url 
+* spring.datasource.username 
+* spring.datasource.password
 
 #### Ejecutar aplicación: 
 usar mvn para ejecutar
 
-Windows example:
+Windows:
 
     mvnw.cmd spring-boot:run
 
-Unix based:
+Unix:
 
     mvwn spring-boot:run 
 
