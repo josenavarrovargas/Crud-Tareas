@@ -1,5 +1,7 @@
 # Crud-Tareas
 
+OJO: cambiar a branch master
+
 Para iniciar la aplicación, se debe contar con Java versión 8 instalado en el equipo. 
 
 Antes de continuar, debe ejecutar en su BD MySQL el script SQL /scripts/crud_tareas.sql
