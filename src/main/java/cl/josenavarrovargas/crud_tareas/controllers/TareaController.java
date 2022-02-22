@@ -107,7 +107,7 @@ public class TareaController {
     @DeleteMapping(path = "/eliminar-tarea/{identificador:.*}")
     public ResponseEntity<?> eliminarTarea(@PathVariable("identificador") Long identificador) {
         if (tareaService.eliminarTarea(identificador)) {
-            return ResponseEntity.ok("Se eliminó correctamente la tarea con identificador " + identificador + ". ");
+            return ResponseEntity.ok("Tarea con identificador " + identificador + " eliminada correctamente. ");
         }
 
         return ResponseEntity.badRequest().body("No se pudo eliminar la tarea con identificador " + identificador + ". ");

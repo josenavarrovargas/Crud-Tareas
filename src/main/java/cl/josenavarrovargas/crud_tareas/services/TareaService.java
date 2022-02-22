@@ -24,14 +24,10 @@ public class TareaService {
     }
 
     public ArrayList<Tarea> obtenerTareasPorVigencia(boolean vigente) {
-        return (ArrayList<Tarea>) tareaRepository.findByVigente(vigente);
+        return tareaRepository.findByVigente(vigente);
     }
 
     public Tarea guardarTarea(Tarea tarea) {
-        if (tarea.getIdentificador() != 0L) {
-            return new Tarea(); 
-        }
-
         return tareaRepository.save(tarea);
     }
 

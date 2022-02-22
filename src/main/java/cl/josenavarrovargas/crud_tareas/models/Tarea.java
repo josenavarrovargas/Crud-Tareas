@@ -20,6 +20,16 @@ public class Tarea {
     private LocalDateTime fechaCreacion;
     private boolean vigente;
 
+    public Tarea(Long identificador, String descripcion, LocalDateTime fechaCreacion, boolean vigente) {
+        this.identificador = identificador;
+        this.descripcion = descripcion;
+        this.fechaCreacion = fechaCreacion;
+        this.vigente = vigente;
+    }
+
+    public Tarea() {
+    }
+
     public Long getIdentificador() {
         return identificador;
     }
@@ -50,6 +60,12 @@ public class Tarea {
 
     public void setVigente(boolean vigente) {
         this.vigente = vigente;
+    }
+
+    @Override
+    public String toString() {
+        return "Tarea [descripcion=" + descripcion + ", fechaCreacion=" + fechaCreacion + ", identificador="
+                + identificador + ", vigente=" + vigente + "]";
     }
 
 }
